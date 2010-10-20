@@ -11,6 +11,26 @@
  *	@copyright	Authors
  */
 
+/**
+ * Add security check from Wolf
+ */
+include('./../../../../../../config.php');
+try {
+    $__CMS_CONN__ = new PDO(DB_DSN, DB_USER, DB_PASS);
+}
+catch (PDOException $error) {
+    die('DB Connection failed: '.$error->getMessage());
+}
+ 
+if ($__CMS_CONN__->getAttribute(PDO::ATTR_DRIVER_NAME) == 'mysql')
+    $__CMS_CONN__->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
+$__FROG_CONN__ = $__CMS_CONN__;
+    
+include('./../../../../../Framework.php');
+include('./../../../../../app/models/AuthUser.php');
+
+Record::connection($__CMS_CONN__);
+Record::getConnection()->exec("set names 'utf8'");
 
 /**
  *	Check if user is authorized
@@ -19,8 +39,14 @@
  */
 function auth() {
 	// You can insert your own code over here to check if the user is authorized.
-	// If you use a session variable, you've got to start the session first (session_start())
-	return true;
+	// This calls credentials from Wolf CMS login
+AuthUser::load();
+    if(AuthUser::isLoggedIn()) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 /**
@@ -54,12 +80,6 @@ $config['images'] = array('jpg','gif','png');
  *	Add the server host (http://www.domain.com) as prefix to files
  */
 $config['add_host'] = false;
-
-
-
-
-
-
 
 /**
  *	not supported yet
