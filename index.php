@@ -37,7 +37,7 @@ Plugin::setInfos(array(
     'author'      => 'Andri Kusumah (Goroworks)',
     'website'     => 'http://www.goroworks.com/',
     'update_url'  => 'http://ulin.goroworks.com/files/oss/wolf/ckeditor-wolf-version.xml',
-    //'require_wolf_version' => '0.5.5'
+    'require_wolf_version' => '0.7.3'
 ));
 Plugin::addController('ckeditor', __('CKEditor'), 'administrator', false);
 Filter::add('ckeditor', 'ckeditor/filter_ckeditor.php');
