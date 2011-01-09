@@ -3,12 +3,8 @@ $(document).ready(function() {
         if (filtername == 'ckeditor') {
             var cked = CKEDITOR.instances[elem.attr('id')];
             if (cked) {
-                var unsavedData = cked.getData();
+                elem[0].value = cked.getData();
                 cked.destroy(true);
-                var plainTextarea = elem;
-                if (plainTextarea) {
-                    plainTextarea.value = unsavedData;
-                }
             }
         }
     });
