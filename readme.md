@@ -5,8 +5,14 @@
 
 ## INSTALL
 
-- Unzip, and rename the wolf_ckeditor/ directory to ckeditor/ (remove "wolf_").
-- Upload the ckeditor/ folder and all its contents to the /wolf/plugins directory.
+### Rename plugin directory
+
+- When the archive is downloaded from Github it will unpack to a directory with a name having the pattern `dajare-wolf_ckeditor-123a4bc`.
+- Rename this to read simply `ckeditor` (remove `dajare-wolf_` and the `-nnnnnnn` suffix).
+
+### Upload and Activate
+
+- Upload the /ckeditor folder and all its contents to the /wolf/plugins directory.
 - Go to wolf Administration screen and activate the plugin.
 - When the screen has refreshed, click "Settings" link now available in the Plugins listing. 
 
@@ -15,4 +21,4 @@
 * This release is compatible with Wolf CMS 0.7.3+ only.
 
 Last edited:
-2011-01-15
+2011-01-20
