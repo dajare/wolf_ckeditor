@@ -20,5 +20,11 @@
 
 * This release is compatible with Wolf CMS 0.7.3+ only.
 
+### Changelog
+
+Version 1.2 : 2011-01-20
+
+- updated CKEditor core to current 3.5 version.
+
 Last edited:
 2011-01-20
