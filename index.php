@@ -34,9 +34,9 @@ Plugin::setInfos(array(
     'description' => __('CKEditor Text Filter v. 3.5'),
     'version'     => '1.2',
     'license'     => 'GPLv3',
-    'author'      => 'Andri Kusumah (Goroworks)',
+    'author'      => 'Andri Kusumah (Goroworks); updated by David Reimer',
     'website'     => 'http://www.goroworks.com/',
-    'update_url'  => 'http://ulin.goroworks.com/files/oss/wolf/ckeditor-wolf-version.xml',
+    'update_url'  => 'http://adajer.byethost5.com/public/plugins.xml',
     'require_wolf_version' => '0.7.3'
 ));
 Plugin::addController('ckeditor', __('CKEditor'), 'administrator', false);
