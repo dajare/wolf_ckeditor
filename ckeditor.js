@@ -13,7 +13,7 @@ $(document).ready(function() {
         if (filtername == 'ckeditor') {
             try {
                 CKEDITOR.replace(elem.attr('id'), {
-                    customConfig : '/wolf/plugins/ckeditor/ckconfig.js.php',
+                    customConfig : CKEDITOR_CONFIG_FILE,
                     on: {
                         instanceReady: function(evt) {
                             var editor = evt.editor, body = editor.document.getBody();
