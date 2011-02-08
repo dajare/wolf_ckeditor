@@ -25,7 +25,7 @@
 Version 1.3 : 2011-02-08
 
 - fixed path-to-config file issue when Wolf was in a subdir
-- updated CKEditor core to current 3.5 version
+- updated CKEditor core to current 3.5.1 version
 - updated documentation
 
 Version 1.2 : 2011-01-20
