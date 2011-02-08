@@ -31,6 +31,3 @@ Version 1.3 : 2011-02-08
 Version 1.2 : 2011-01-20
 
 - updated CKEditor core to current 3.5 version.
-
-Last edited:
-2011-01-20
