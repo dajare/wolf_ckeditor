@@ -23,4 +23,9 @@ config.toolbar_Basic = [ ['Bold', 'Italic', '-', 'NumberedList', 'BulletedList',
 <?php if( !empty($CKEditorConfigs['editorContentsCss']) ):?>
 config.contentsCss = '<?php echo $CKEditorConfigs['editorContentsCss'];?>';
 <?php endif;?>
+
+<?php /** styles set, if defined **/?>
+<?php if( !empty($CKEditorConfigs['editorStylesSet']) ):?>
+config.stylesSet = 'my_styles:<?php echo $CKEditorConfigs['editorStylesSet'];?>';
+<?php endif;?>
 };

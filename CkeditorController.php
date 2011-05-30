@@ -73,6 +73,7 @@ class CkeditorController extends PluginController {
         if (!array_key_exists('fileBrowserRootDir', $_POST) ||
             !array_key_exists('fileBrowserRootUri', $_POST) ||
             !array_key_exists('editorContentsCss', $_POST) ||
+            !array_key_exists('editorStylesSet', $_POST) ||
             !array_key_exists('editorToolbarSet', $_POST)
         ){
             Flash::set('error', 'CKEditor - '.__('form was not posted.'));
@@ -81,6 +82,7 @@ class CkeditorController extends PluginController {
             $fileBrowserRootDir = $_POST['fileBrowserRootDir'];
             $fileBrowserRootUri = $_POST['fileBrowserRootUri'];
             $editorContentsCss = $_POST['editorContentsCss'];
+            $editorStylesSet = $_POST['editorStylesSet'];
             $editorToolbarSet = $_POST['editorToolbarSet'];
             if ($fileBrowserRootDir[strlen($fileBrowserRootDir)-1] == '/' || $fileBrowserRootDir[strlen($fileBrowserRootDir)-1] == '\\'){
                 $fileBrowserRootDir = substr($fileBrowserRootDir, 0, strlen($fileBrowserRootDir)-1);
@@ -101,6 +103,7 @@ class CkeditorController extends PluginController {
                               'fileBrowserRootDir' => $fileBrowserRootDir,
                               'fileBrowserRootUri' => $fileBrowserRootUri,
                               'editorContentsCss'=> $editorContentsCss,
+                              'editorStylesSet'=> $editorStylesSet,
                               'editorToolbarSet' => $editorToolbarSet
             );
 
