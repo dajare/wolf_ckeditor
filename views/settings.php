@@ -60,6 +60,11 @@
             <input name="editorContentsCss" type="text" size="35" maxsize="255" value="<?php echo $editorContentsCss;?>" style="padding: 4px 8px;"/>
             <p class="help" style="font-size:93%;padding-top:2px;margin-top:0;color: #666;font-style:italic"><?php echo __('Optional, relative URL to your css file, e.g <code>/public/theme/wolf/style.css</code>, you can leave it blank to use default style');?></p>
         </div>
+        <div class="fieldset" style="padding: .5em 0">
+            <label for="editorStylesSet"  style="display:block"><?php echo __('Styles set url:');?> </label>
+            <input name="editorStylesSet" type="text" size="35" maxsize="255" value="<?php echo $editorStylesSet;?>" style="padding: 4px 8px;"/>
+            <p class="help" style="font-size:93%;padding-top:2px;margin-top:0;color: #666;font-style:italic"><?php echo __('Optional, relative URL to your js file, e.g <code>/public/theme/wolf/js/styles_set.js</code>, you can leave it blank to use default styles set');?></p>
+        </div>
     </fieldset>
     <p class="buttons">
         <input class="button" name="commit" type="submit" accesskey="s" value="<?php echo __('Save');?>" />
