@@ -31,8 +31,8 @@
 Plugin::setInfos(array(
     'id'          => 'ckeditor',
     'title'       => __('CKEditor'),
-    'description' => __('CKEditor Text Filter v. 3.5.1'),
-    'version'     => '1.3',
+    'description' => __('CKEditor Text Filter v. 3.6'),
+    'version'     => '1.4',
     'license'     => 'GPLv3',
     'author'      => 'Andri Kusumah (Goroworks); updated by David Reimer',
     'website'     => 'http://www.goroworks.com/',

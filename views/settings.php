@@ -19,7 +19,7 @@
 
 
     <fieldset style="padding: 0.5em;margin-bottom: 1em;">
-        <legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('file browser'); ?></legend>
+        <legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('File browser'); ?></legend>
         <div class="fieldset" style="padding: .5em 0">
             <input name="fileBrowserEnable" type="checkbox" <?php echo ($fileBrowserEnable ? 'checked="true"' : ''); ?>/>
             <label for="fileBrowserEnable" style="padding-left: .4em;"><?php echo __('Enable file browser integration:');?> </label>
@@ -42,7 +42,7 @@
     </fieldset>
 
     <fieldset style="padding: 0.5em;margin-bottom: 1em;">
-        <legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('Editor Options');?></legend>
+        <legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('Editor options');?></legend>
         <div class="fieldset" style="padding: .5em 0">
             <label for="editorToolbarSet"><?php echo __('Toolbar Set:');?> </label>
             <select name="editorToolbarSet">

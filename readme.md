@@ -22,6 +22,12 @@
 
 ### Changelog
 
+Version 1.4 : 2011-06-03
+
+- added dynamic 'styles set' file path in the settings, for use with the ckeditor style dropdown - issue # 6 - thanks agenceamiral
+- updated CKEditor core to current 3.6 version
+- minor tweaks to settings view
+
 Version 1.3 : 2011-02-08
 
 - fixed path-to-config file issue when Wolf was in a subdir
