@@ -22,6 +22,11 @@
 
 ### Changelog
 
+In development : 
+
+- minor documentation tweaks
+- plugin URL now points to Github
+
 Version 1.4 : 2011-06-03
 
 - added dynamic 'styles set' file path in the settings, for use with the ckeditor style dropdown - issue # 6 - thanks agenceamiral

@@ -4,7 +4,7 @@
 <p style="margin-top:.5em;"><?php echo __(' The CKEditor editor plugin for Wolf consists of a following components:');?>
 <ul style="list-style-type:square;padding-left:1.5em">
     <li>
-        <a target="_blank" href="http://ckeditor.com/">CKEditor</a>, <?php echo __('v. 3.5.1 (unmodified, excluding  source and example files).');?>
+        <a target="_blank" href="http://ckeditor.com/">CKEditor</a>, <?php echo __('maintained at most recent versions, unmodified (excluding  source and example files).');?>
     </li>
     <li>
         <a target="_blank" href="http://labs.corefive.com/2009/10/30/an-open-file-manager-for-ckeditor-3-0/">Open File Manager for CKEditor</a>, <?php echo __('svn rev16 (slightly modified to make it work/fix some bugs)');?>

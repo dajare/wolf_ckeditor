@@ -35,7 +35,7 @@ Plugin::setInfos(array(
     'version'     => '1.4',
     'license'     => 'GPLv3',
     'author'      => 'Andri Kusumah (Goroworks); updated by David Reimer',
-    'website'     => 'http://www.goroworks.com/',
+    'website'     => 'https://github.com/dajare/wolf_ckeditor',
     'update_url'  => 'http://adajer.byethost5.com/public/plugins.xml',
     'require_wolf_version' => '0.7.3'
 ));
