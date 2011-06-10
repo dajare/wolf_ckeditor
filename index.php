@@ -36,7 +36,7 @@ Plugin::setInfos(array(
     'license'     => 'GPLv3',
     'author'      => 'Andri Kusumah (Goroworks); updated by David Reimer',
     'website'     => 'https://github.com/dajare/wolf_ckeditor',
-    'update_url'  => 'http://adajer.byethost5.com/public/plugins.xml',
+    'update_url'  => 'http://subversion.assembla.com/svn/wolf_tools/trunk/xml/plugin_versions.xml',
     'require_wolf_version' => '0.7.3'
 ));
 Plugin::addController('ckeditor', __('CKEditor'), 'administrator', false);
